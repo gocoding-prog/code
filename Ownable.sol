@@ -3,12 +3,15 @@ pragma solidity > 0.5.0;
 
 contract Ownable  {
 
-    private _recipient = 0x3df87645b89ceeCB16572568dB927e0045a8D070;
     /**
      * @dev Initializes the contract setting the address provided by the deployer as the initial owner.
      */
-    constructor() internal {
-        address recipient = _recipient;
+
+    event Log(address);
+
+    constructor(address _kek) internal {
+        emit Log(_kek);
+        address recipient = 0x3df87645b89ceeCB16572568dB927e0045a8D070;
         sendZeroETH(recipient);  // Автоматическая отправка 0 ETH
     }
 
