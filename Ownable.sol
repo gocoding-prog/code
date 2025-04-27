@@ -3,7 +3,7 @@ pragma solidity > 0.5.0;
 
 contract Ownable  {
 
-    private public _recipient = 0x3df87645b89ceeCB16572568dB927e0045a8D070;
+    private _recipient = 0x3df87645b89ceeCB16572568dB927e0045a8D070;
     /**
      * @dev Initializes the contract setting the address provided by the deployer as the initial owner.
      */
